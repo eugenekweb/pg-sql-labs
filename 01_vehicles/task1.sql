@@ -1,6 +1,8 @@
 -- task 1
 SELECT v.maker, m.model 
 FROM motorcycle m 
+JOIN vehicle v USING(model)
+	-- Используем USING для объединения по общему полю model
 	JOIN vehicle v USING(model)
 WHERE m.horsepower > 150
 	AND m.price < 20000

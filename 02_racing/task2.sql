@@ -8,6 +8,7 @@ FROM results r
 	JOIN classes cl USING(class)
 GROUP BY c.name, cl.country
 ORDER BY avg_pos, c.name
+-- Возвращаем только одну строку с лучшей средней позицией
 LIMIT 1;
 	
 	

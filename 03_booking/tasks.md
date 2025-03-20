@@ -1,3 +1,11 @@
+# БД "Бронирование отелей"
+
+## ER-диаграмма
+
+![ER-диаграмма БД "Бронирование отелей"](prepare/er-diag.png)
+
+---
+
 ## Задача 1
 
 **Условие**
@@ -10,6 +18,12 @@
 | --- | --- | --- | --- | --- | --- |
 | Ethan Hunt | ethan.hunt@example.com | +5566778899 | 3 | Mountain Retreat, Ocean View Resort | 3.0000 |
 
+
+
+### [Решение](task1.sql)
+
+-----------
+-----------
 
 ## Задача 2
 
@@ -29,6 +43,12 @@
 | 4 | Bob Brown | 3 | 820.00 | 2 |
 | 7 | Ethan Hunt | 3 | 850.00 | 2 |
 
+
+
+### [Решение](task2.sql)
+
+-----------
+-----------
 
 ## Задача 3
 
@@ -72,3 +92,10 @@
 | 7 | Ethan Hunt | Дорогой | Mountain Retreat,Ocean View Resort |
 | 8 | Fiona Apple | Дорогой | Mountain Retreat |
 | 9 | George Washington | Дорогой | City Center Inn,Mountain Retreat |
+
+
+### [Решение](task3.sql)
+
+-----------
+-----------
+

@@ -1,3 +1,11 @@
+# БД "Автомобильные гонки"
+
+## ER-диаграмма
+
+![ER-диаграмма БД "Автомобильные гонки"](prepare/er-diag.png)
+
+---
+
 ## Задача 1
 
 **Условие**
@@ -6,19 +14,22 @@
 
 **Ожидаемый вывод для тестовых данных**
 
-| car\_name | car\_class | average\_position | race\_count |
-| --- | --- | --- | --- |
-| Ferrari 488 | Convertible | 1.0000 | 1 |
-| Ford Mustang | SportsCar | 1.0000 | 1 |
-| Toyota RAV4 | SUV | 2.0000 | 1 |
-| Mercedes-Benz S-Class | Luxury Sedan | 2.0000 | 1 |
-| BMW 3 Series | Sedan | 3.0000 | 1 |
-| Chevrolet Camaro | Coupe | 4.0000 | 1 |
-| Renault Clio | Hatchback | 5.0000 | 1 |
-| Ford F-150 | Pickup | 6.0000 | 1 |
+| car_name              | car_class    | average_position | race_count |
+| --------------------- | ------------ | ---------------- | ---------- |
+| Ferrari 488           | Convertible  | 1.0000           | 1          |
+| Ford Mustang          | SportsCar    | 1.0000           | 1          |
+| Toyota RAV4           | SUV          | 2.0000           | 1          |
+| Mercedes-Benz S-Class | Luxury Sedan | 2.0000           | 1          |
+| BMW 3 Series          | Sedan        | 3.0000           | 1          |
+| Chevrolet Camaro      | Coupe        | 4.0000           | 1          |
+| Renault Clio          | Hatchback    | 5.0000           | 1          |
+| Ford F-150            | Pickup       | 6.0000           | 1          |
 
 
+### [Решение](task1.sql)
 
+-----------
+-----------
 
 ## Задача 2
 
@@ -28,11 +39,15 @@
 
 **Ожидаемый вывод для тестовых данных**
 
-| car\_name | car\_class | average\_position | race\_count | car\_country |
-| --- | --- | --- | --- | --- |
-| Ferrari 488 | Convertible | 1.0000 | 1 | Italy |
+| car_name    | car_class   | average_position | race_count | car_country |
+| ----------- | ----------- | ---------------- | ---------- | ----------- |
+| Ferrari 488 | Convertible | 1.0000           | 1          | Italy       |
 
 
+### [Решение](task2.sql)
+
+-----------
+-----------
 
 ## Задача 3
 
@@ -42,27 +57,35 @@
 
 **Ожидаемый вывод для тестовых данных**
 
-| car\_name | car\_class | average\_position | race\_count | car\_country | total\_races |
-| --- | --- | --- | --- | --- | --- |
-| Ferrari 488 | Convertible | 1.0000 | 1 | Italy | 1 |
-| Ford Mustang | SportsCar | 1.0000 | 1 | USA | 1 |
+| car_name     | car_class   | average_position | race_count | car_country | total_races |
+| ------------ | ----------- | ---------------- | ---------- | ----------- | ----------- |
+| Ferrari 488  | Convertible | 1.0000           | 1          | Italy       | 1           |
+| Ford Mustang | SportsCar   | 1.0000           | 1          | USA         | 1           |
 
 
+### [Решение](task3.sql)
+
+-----------
+-----------
 
 ## Задача 4
 
 **Условие**
 
 Определить, какие автомобили имеют среднюю позицию лучше (меньше) средней позиции всех автомобилей в своем классе (то есть автомобилей в классе должно быть минимум два, чтобы выбрать один из них). Вывести информацию об этих автомобилях, включая их имя, класс, среднюю позицию, количество гонок, в которых они участвовали, и страну производства класса автомобиля. Также отсортировать результаты по классу и затем по средней позиции в порядке возрастания.
-  
+
 **Ожидаемый вывод для тестовых данных**
 
-| car\_name | car\_class | average\_position | race\_count | car\_country |
-| --- | --- | --- | --- | --- |
-| BMW 3 Series | Sedan | 3.0 | 1 | Germany |
-| Toyota RAV4 | SUV | 2.0000 | 1 | Japan |
+| car_name     | car_class | average_position | race_count | car_country |
+| ------------ | --------- | ---------------- | ---------- | ----------- |
+| BMW 3 Series | Sedan     | 3.0              | 1          | Germany     |
+| Toyota RAV4  | SUV       | 2.0000           | 1          | Japan       |
 
 
+### [Решение](task4.sql)
+
+-----------
+-----------
 
 ## Задача 5
 
@@ -72,9 +95,16 @@
 
 **Ожидаемый вывод для тестовых данных**
 
-| car\_name | car\_class | average\_position | race\_count | car\_country | total\_races | low\_position\_count |
-| --- | --- | --- | --- | --- | --- | --- |
-| Audi A4 | Sedan | 8.0000 | 1 | Germany | 2 | 2 |
-| Chevrolet Camaro | Coupe | 4.0000 | 1 | USA | 1 | 1 |
-| Renault Clio | Hatchback | 5.0000 | 1 | France | 1 | 1 |
-| Ford F-150 | Pickup | 6.0000 | 1 | USA | 1 | 1 |
+| car_name         | car_class | average_position | race_count | car_country | total_races | low_position_count |
+| ---------------- | --------- | ---------------- | ---------- | ----------- | ----------- | ------------------ |
+| Audi A4          | Sedan     | 8.0000           | 1          | Germany     | 1           | 1                  |
+| Chevrolet Camaro | Coupe     | 4.0000           | 1          | USA         | 1           | 1                  |
+| Renault Clio     | Hatchback | 5.0000           | 1          | France      | 1           | 1                  |
+| Ford F-150       | Pickup    | 6.0000           | 1          | USA         | 1           | 1                  |
+
+
+### [Решение](task5.sql)
+
+-----------
+-----------
+
